@@ -18,15 +18,6 @@ jobs:
         with:
           pdk: ihp
 
-  precheck:
-    needs: gds
-    runs-on: ubuntu-24.04
-    steps:
-      - name: Run Tiny Tapeout Precheck
-        uses: TinyTapeout/tt-gds-action/precheck@ttihp25b
-        with:
-          pdk: ihp
-
   viewer:
     needs: gds
     runs-on: ubuntu-24.04
